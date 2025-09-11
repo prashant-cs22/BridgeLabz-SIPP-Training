@@ -1,0 +1,24 @@
+Pseudo-code: Online Exam Portal
+
+Class User
+    Attributes: username, password
+    Method login()
+        Print "Generic login process"
+
+Class Student extends User
+    Method login()
+        If student is registered AND enrolled
+            Print "Student logged in: Access to exams"
+        Else
+            Print "Access denied: Not enrolled"
+
+Class Admin extends User
+    Method login()
+        If admin credentials AND role verified
+            Print "Admin logged in: Manage exams"
+        Else
+            Print "Access denied: Invalid admin"
+
+Example Run:
+Student john123 enters credentials → validated → shows exams.
+Admin enters credentials → validated → shows exam management tools.

@@ -1,0 +1,20 @@
+Pseudo-code: Online Survey Report Generator
+
+Class SurveyResponse
+    Attributes: restaurantName, rating
+
+Method generateReport(responses)
+    Group responses by restaurantName
+    For each group → calculate average rating
+
+    Print each restaurant with average rating
+    Identify highest and lowest rated
+
+Example:
+PizzaHut → [4, 5] → Avg = 4.5
+KFC → [3, 4] → Avg = 3.5
+Subway → [5, 4, 5] → Avg = 4.67
+
+Output:
+Highest: Subway (4.67)
+Lowest: KFC (3.5)

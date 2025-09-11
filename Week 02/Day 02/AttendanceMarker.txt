@@ -1,0 +1,26 @@
+Pseudo-code: Attendance Marker
+
+Matrix attendance[30][30] // students x days
+
+Method markAttendance(studentId, day, status)
+    attendance[studentId][day] = status
+
+Method dailySummary(day)
+    Count number of 1s in column 'day'
+    Print result
+
+Method monthlySummary(studentId)
+    Count number of 1s in row 'studentId'
+    Print result
+
+Method defaulterList()
+    For each student
+        totalDays = count of 1s in row
+        If totalDays < 22
+            Print "Defaulter: studentId"
+
+Example Run:
+Student 1 present on Day 1, Student 3 absent
+Check Day 10 → Count = X
+Check Student 5 total days → Count = Y
+Defaulters → List roll numbers < 22 days present

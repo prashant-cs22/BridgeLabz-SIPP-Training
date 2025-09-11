@@ -1,0 +1,26 @@
+Pseudo-code: Bus Route Navigator
+
+Class Node
+    Attributes: stopName, next
+
+Class LinkedList
+    head = null
+
+    Method insert(stopName, position)
+        Create new Node
+        Insert at given position
+
+    Method delete(stopName)
+        Search stopName in list
+        If found → remove node
+
+    Method search(stopName)
+        Traverse list
+        If found → Print "Stop exists"
+        Else → Print "Stop not found"
+
+Example Run:
+Route: Depot → Main Street → City Mall → Hospital → Airport
+Insert University after City Mall → Depot → Main Street → City Mall → University → Hospital → Airport
+Delete Hospital → Depot → Main Street → City Mall → University → Airport
+Search Airport → Found

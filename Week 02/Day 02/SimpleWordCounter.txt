@@ -1,0 +1,25 @@
+Pseudo-code: Simple Word Counter
+
+Input: Text paragraph
+
+Method wordCount(text)
+    Convert text to lowercase
+    Remove punctuation
+    Split text into words
+    For each word
+        Update count in Map
+
+    Print all words with frequency
+
+Example:
+"Sports bring people together. Sports inspire teamwork. Sports create leaders."
+
+Output:
+sports → 3
+bring → 1
+people → 1
+together → 1
+inspire → 1
+teamwork → 1
+create → 1
+leaders → 1

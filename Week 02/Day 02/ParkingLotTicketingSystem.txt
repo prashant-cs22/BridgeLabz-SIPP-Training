@@ -1,0 +1,29 @@
+Pseudo-code: Parking Lot Ticketing System
+
+Class Vehicle
+    Attributes: vehicleNumber, entryTime
+    Method calculateFee(exitTime)
+        Return 0  // base, overridden in subclasses
+
+Class Car extends Vehicle
+    Method calculateFee(exitTime)
+        hours = ceil(exitTime - entryTime)
+        fee = 50 + (hours - 1) * 30
+        Return fee
+
+Class Bike extends Vehicle
+    Method calculateFee(exitTime)
+        hours = ceil(exitTime - entryTime)
+        fee = 20 + (hours - 1) * 10
+        Return fee
+
+Class Truck extends Vehicle
+    Method calculateFee(exitTime)
+        hours = ceil(exitTime - entryTime)
+        fee = 100 + (hours - 1) * 50
+        Return fee
+
+Example Run:
+Car KA05AB1234 enters 10:00 AM → exits 1:30 PM → Fee 125
+Bike KA05XY7890 enters 11:15 AM → exits 12:00 PM → Fee 30
+Truck KA09TR5566 enters 09:30 AM → exits 2:00 PM → Fee 325
